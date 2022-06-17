@@ -1,0 +1,49 @@
+/* reset CSS */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+#header {
+    background-color: black;
+    height: 46px;
+    width: auto;
+    line-height: 46px;
+}
+#nav,.subnav{
+    list-style-type: none;
+}
+#nav >li{
+    display: inline-block;
+}
+#nav li{
+    color:aliceblue;
+    
+    position: relative;
+}
+#nav > li >a{
+    color:aliceblue;
+}
+#nav li a{
+    text-decoration: dashed;
+    padding: 0px 24px;
+    display: inline-block;
+   
+}
+#nav .subnav li:hover,#nav >li:hover > a{
+    color:rgb(0, 0, 0);
+    background-color: rgb(177, 193, 207);
+}
+#nav .subnav {
+    display: none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    box-shadow:0px 0px 10px rgb(0, 0, 0);
+}
+#nav li:hover .subnav{
+    display: block;
+}
+  
