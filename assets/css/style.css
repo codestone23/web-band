@@ -5,7 +5,9 @@
     box-sizing: border-box;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
-
+#nav {
+    display: inline-block;
+}
 #header {
     background-color: black;
     height: 46px;
@@ -46,4 +48,16 @@
 #nav li:hover .subnav{
     display: block;
 }
-  
+#header .search-btn{
+    display: inline-block;
+    float: right;
+    color: aliceblue;
+    width: 46px;
+    padding: 0px 20px 0px 16px;
+    position: relative;
+}
+#header .search-btn:hover{
+    background-color: rgb(200, 8, 8);
+    cursor: pointer;
+    display: inline-block;
+}
