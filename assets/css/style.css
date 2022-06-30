@@ -25,12 +25,12 @@
     display: inline-block;
 }
 #nav li{
-    color:aliceblue;
+    color:rgb(255, 255, 255);
     
     position: relative;
 }
 #nav > li > a{
-    color:aliceblue;
+    color:rgb(255, 255, 255);
 }
 #nav li a{
     text-decoration: dashed;
@@ -56,7 +56,7 @@
     display: inline-block;
     position:absolute;
     right: 0px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     width: 46px;
     padding: 0px 20px 0px 15px;
     margin-left: 50px;
@@ -80,13 +80,13 @@
 #slider .text-heading{
     position:absolute;
     bottom: 46px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     padding-bottom: 10px;
 }
 #slider .text-description{
     position:absolute;
     bottom: 27px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
 }
 .content{
     text-align: center;
@@ -126,7 +126,7 @@
     padding: 20px;
 }
 .content-tour{
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     background-color: #000;
      height: 800px;
 }
@@ -137,7 +137,7 @@
     padding: 40px;
 }
 .content-tour ul li{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     color: #000;
     width: 895px;
     margin: 0px auto 0px auto;
@@ -158,7 +158,7 @@
 }
 .content-tour ul h3{
     font-size: 16px;
-    color: aliceblue;
+    color: rgb(255, 255, 255);
     background-color: rgb(240, 74, 74);
     display: block;
     float: right;
@@ -166,7 +166,60 @@
     border-radius: 10px;
 }
 
-/* #footer {
-    height: 400px;
-    background-color: #000;
-} */
+#footer{
+    width: 100%;
+    height: 1800px;
+}
+#footer .footer-contact{
+    text-align: center;
+    margin-top: 40px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+
+}
+#footer .footer-contact h2{
+    letter-spacing: 3px;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+#footer .footer-contact p{
+    opacity: 0.5;
+    font-style: italic;
+}
+#footer .footer-contact div{
+    width: 50%;
+    
+}
+
+#footer .footer-contact .footer-address,.footer-customer{
+    background-color: rgb(255, 255, 255) ;
+    width: 850px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+
+}
+#footer .footer-contact .footer-address i{
+    color: rgb(0, 0, 0);
+}
+#footer .footer-map{
+    background: url(/assets/img/map.jpg) top center / cover no-repeat;
+    position: relative;
+    height:1080px;
+    padding-top: 50%;
+
+    
+}
+#footer .footer-contact .footer-address{
+    position: relative;
+    left: 0px;
+}
+#footer .footer-contact .footer-customer{
+    position: relative;
+    right: 0px;
+}
+#footer .footer-info{
+   background-color: rgb(255, 255, 255);
+}
