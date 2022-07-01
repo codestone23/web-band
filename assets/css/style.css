@@ -4,6 +4,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif;
+    
 }
 #nav {
     display: inline-block;
@@ -168,7 +169,7 @@
 
 #footer{
     width: 100%;
-    height: 1800px;
+    height: 1700px;
 }
 #footer .footer-contact{
     text-align: center;
@@ -188,38 +189,74 @@
 }
 #footer .footer-contact div{
     width: 50%;
-    
+    height: 300px;
+   margin: 10px auto 10px auto;
+   text-align: center;
+   
+   
 }
+#footer .footer-normal{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
 
+}
 #footer .footer-contact .footer-address,.footer-customer{
     background-color: rgb(255, 255, 255) ;
-    width: 850px;
+    width: 600px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
     padding: 10px;
-    
-
+    height: 200px;
 }
 #footer .footer-contact .footer-address i{
     color: rgb(0, 0, 0);
 }
-#footer .footer-map{
-    background: url(/assets/img/map.jpg) top center / cover no-repeat;
-    position: relative;
-    height:1080px;
-    padding-top: 50%;
-
-    
+#footer .footer-contact .footer-address h3{
+    padding: 6px;
 }
+
 #footer .footer-contact .footer-address{
-    position: relative;
     left: 0px;
+    text-align: left;
+    margin-top: 20px;
 }
 #footer .footer-contact .footer-customer{
-    position: relative;
     right: 0px;
+    padding: 20px;
+    
+}
+#footer .footer-contact .footer-customer input{
+    
+    margin: 0px 10px 4px 4px;
+    padding: 7px;
+}
+#footer .footer-contact .footer-customer  button{
+    right: 0px;
+    position: relative;
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    padding: 6px;
+}
+#footer .footer-contact .footer-customer  button:hover{
+    background-color: rgb(193, 25, 25);
+}
+#footer .footer-contact .footer-customer .one,.two{
+    float: left;
+    width: 180px;
+}
+#footer  .footer-contact .footer-customer .three{
+    width: 374px;
 }
 #footer .footer-info{
    background-color: rgb(255, 255, 255);
+}
+#footer .footer-map{
+    background: url(/assets/img/map.jpg) bottom center / cover no-repeat;
+    height:1080px;
+    padding-top: 50%;
+}
+#footer .footer-info{
+    text-align: center;
+    margin: 50px;
 }
