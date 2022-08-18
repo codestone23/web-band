@@ -1,0 +1,100 @@
+[33mcommit 5ca978b12c46b9a5ad0b04d94df7cab92835e335[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Fri Jul 1 13:41:09 2022 +0700
+
+    finish my web
+
+[33mcommit 8e47d9202c03092963c86b5fd7b7318fff0fbd30[m
+Merge: 56ec01c c092e27
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Thu Jun 30 15:11:25 2022 +0700
+
+    Merge branch 'master' of https://github.com/codestone23/web-band
+
+[33mcommit 56ec01c38c14b897f14b51d616b52b239df9afd4[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Thu Jun 30 15:11:00 2022 +0700
+
+    change-content
+
+[33mcommit c092e27277e2860cf70afe75934a5e4dfd3bb121[m
+Merge: a55b7e9 00cb1b1
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Thu Jun 30 13:53:16 2022 +0700
+
+    Merge pull request #1 from codestone23/feature
+    
+    FEATURE index.html better
+
+[33mcommit 00cb1b1bd419cc6a6f9bf5f2aad544999ba45bac[m[33m ([m[1;31morigin/feature[m[33m, [m[1;32mfeature[m[33m)[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 29 14:23:58 2022 +0700
+
+    test-branch
+
+[33mcommit 256701a9d8f2e0eff977b657ea45ce4b48ec35bf[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 29 13:54:16 2022 +0700
+
+    add change to feature branch
+
+[33mcommit a55b7e979d42e646ef4040ef1af7558aed4c7753[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 29 13:12:36 2022 +0700
+
+    fixed-code
+
+[33mcommit 7bd9983ca18f15151b5b8cb2443d3ede36245990[m
+Merge: 39f6c78 96eb1f6
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 22 22:17:25 2022 +0700
+
+    Merge branch 'master' of https://github.com/codestone23/web-band
+
+[33mcommit 39f6c78a3a3db044b38fed6213dc38443b5a9d28[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 22 22:15:42 2022 +0700
+
+    change-end
+
+[33mcommit 13d745562731c3f04c2f23483f3066551df8fcc0[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Wed Jun 22 22:01:45 2022 +0700
+
+    second-change
+
+[33mcommit 96eb1f6e594928868ec193734810404b50ca53bc[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Sun Jun 19 16:39:41 2022 +0700
+
+    web-band build
+
+[33mcommit 642e822876fa44d5fd0b60fc4c23c8645571b13d[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Sun Jun 19 16:35:06 2022 +0700
+
+    first update
+
+[33mcommit 73c7f6123a564eebec200957a439102b9ae5502e[m
+Author: Phạm Gia Đạt <84780233+codestone23@users.noreply.github.com>
+Date:   Sun Jun 19 15:18:01 2022 +0700
+
+    change
+
+[33mcommit d928450ff45eab646a2c266d1bacb5ccb8ccf74f[m
+Author: Ysodas <phamdat04052003@gmail.com>
+Date:   Fri Jun 17 09:34:04 2022 +0700
+
+    charge
+
+[33mcommit ac5f166ed3043aa504d7e026982a4343708dc761[m
+Author: Ysodas <phamdat04052003@gmail.com>
+Date:   Fri Jun 17 09:25:17 2022 +0700
+
+    second update
+
+[33mcommit ba352efbadf8783995893ae3551e70379c7bf2ce[m
+Author: Ysodas <phamdat04052003@gmail.com>
+Date:   Fri Jun 17 09:19:59 2022 +0700
+
+    first commit
