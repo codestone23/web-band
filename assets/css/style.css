@@ -5,6 +5,12 @@
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif; 
 }
+.clear{
+    clear: both;
+}
+.text-white{
+    color: rgb(255, 255, 255) !important;
+}
 #nav {
     display: inline-block;
 }
@@ -118,113 +124,56 @@
      text-align: justify;
      margin-bottom: 60px;
 }
- .content-img{
-    text-align: center;
-    margin: 10px auto 10px auto;
-   width: 895px;
-   border: 1px solid #000;
-   border-radius: 20px;
-   margin-bottom: 100px;
+#content .members-list{
+    margin-top: 48px;
 }
- .content-img td {
-    margin-bottom: 20px;
-    padding: 20px;
-}
-.content-tour{
-    color: rgb(255, 255, 255);
-    background-color: #000;
-     height: 800px;
-}
-.content-tour .content-show-tour{
-    width: 895px;
-    text-align: center;
-    margin: 10px auto 10px auto;
-    padding: 40px;
-}
-.content-tour ul li{
-    background-color: rgb(255, 255, 255);
-    color: #000;
-    width: 895px;
-    margin: 0px auto 0px auto;
-    padding: 15px;
-    border-top: 1px solid #000;
-    left: 0px;
-    position: relative;
-    left: 0px;
-}
-.content-tour ul span{
-    width: 20px;
-    color: rgb(255, 255, 255);
-    border: 1px solid #000;
-   border-radius: 50%;
-   padding: 0px 5px;
-   float: right;
-   background-color: #000;
-   display: block;
-}
-.content-tour ul h3{
-    font-size: 16px;
-    color: rgb(255, 255, 255);
-    background-color: rgb(240, 74, 74);
-    display: block;
-    float: right;
-    padding: 0px 10px;
-    border-radius: 10px;
-}
-.content-img-tour {
-   text-align:left;
-   margin: 10px auto 10px auto;
-   width: 895px;
-   border: 1px solid #000;
-   border-radius: 20px;
-   margin-bottom: 100px;
-}
-.content-img-tour .place-content{
-    background-color: rgb(255, 255, 255);
-    height: 200px;
-    display: block;
-}
-.content-img-tour .place-tour{
-    position: relative;
-    margin: 20px auto 10px auto;
-    height: 400px;
-    width: 296px;
+#content .member-item{
     float: left;
-    color:#000;
-    padding: 0px 10px;
+    width: 33.33333%;
+    text-align: center;
 }
-.place-tour .place-img{
-    width: 100%;
+#content .member-name{
+    font-size: 15px;
+    
 }
-.place-tour .place-content{
-    text-align: left;
-    padding: 20px;
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 5px;
 }
-.place-tour .place-content-heading{
-    font-size: large;
-    font-weight:bold;
-    padding-bottom: 10px;
-}
-.place-tour .place-content-date{
-    font-size:medium;
-    padding: 10px 0px;
-    opacity: 0.6;
-}
-.place-tour .place-content-dis{
-    padding-bottom: 10px;
-}
-.place-tour .place-content button{
-    padding :10px ;
+/* tour section */
+.tour-section{
     background-color: #000;
-    color: rgb(255, 255, 255);
 }
-.place-tour .place-content button:hover{
-    padding :10px ;
-    background-color: rgb(143, 117, 117);
-    color: rgb(0, 0, 0);
-    border: 0px;
+.tickets-list{
+    background-color: white;
+    margin-top: 40px; 
 }
+.tickets-list li{
+    color: #757575;
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    list-style: none;
+}
+.tickets-list .sold-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 24px;
+    height: 24px;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
+    margin-top: -3px;
 
+}
 
 .info-send{
     float: right;
