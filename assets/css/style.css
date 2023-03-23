@@ -75,7 +75,7 @@
 }
 #slider {
     margin: 46px 0px;
-    background: url(./assets/img/chicago.jpg) top center / cover no-repeat;
+    background: url(../img/chicago.jpg) top center / cover no-repeat;
     padding-top: 50%;
     position: relative;
 }
@@ -273,7 +273,7 @@
    padding-bottom: 40px;
 }
 #footer .footer-map{
-    background: url(./assets/img/map.jpg) bottom center / cover no-repeat;
+    background: url(../img/map.jpg) bottom center / cover no-repeat;
     /* height:1080px; */
     padding-top: 50%;
     width: 100%;
