@@ -174,6 +174,58 @@
     margin-top: -3px;
 
 }
+/* place */
+.places-list{
+    margin: 0 -8px;
+    margin-top: 32px;
+    padding-bottom: 48px;
+}
+.place-item{
+    float: left;
+    width: 33.333333%; 
+    padding: 0 8px;
+}
+.place-img{
+    width: 100%;
+    display: block;
+}
+.place-img:hover{
+    opacity: 0.8;
+}
+.place-body{
+    background-color: white;
+    padding: 16px;
+    font-size: 15px;
+    
+}
+.place-heading{
+    font-size: 15px;
+    font-weight: 600;
+}
+.place-time{
+    margin-top: 15px;
+}
+.place-dsc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+.place-buy-btn{
+    color: #fff;
+    background-color: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    margin-top: 15px;
+}
+.place-buy-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+
+
+
 
 .info-send{
     float: right;
