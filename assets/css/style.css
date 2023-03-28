@@ -5,11 +5,40 @@
     box-sizing: border-box;
     font-family:'Times New Roman', Times, serif; 
 }
-.clear{
-    clear: both;
+.mt-8{
+    margin-top: 8px !important;
+}
+.mt-16{
+    margin-top:16px !important;
 }
 .text-white{
     color: rgb(255, 255, 255) !important;
+}
+.text-center{
+    text-align:center !important;
+}
+/* row */
+.row{
+    margin: 0 -8px;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right:8px;
+}
+.col-third{
+    width: 33.33333%;
+}
+.col-half{
+    width: 50%;
+}
+.col-full{
+    width: 100%;
 }
 #nav {
     display: inline-block;
@@ -127,11 +156,6 @@
 #content .members-list{
     margin-top: 48px;
 }
-#content .member-item{
-    float: left;
-    width: 33.33333%;
-    text-align: center;
-}
 #content .member-name{
     font-size: 15px;
     
@@ -174,16 +198,11 @@
     margin-top: -3px;
 
 }
+
 /* place */
 .places-list{
-    margin: 0 -8px;
     margin-top: 32px;
     padding-bottom: 48px;
-}
-.place-item{
-    float: left;
-    width: 33.333333%; 
-    padding: 0 8px;
 }
 .place-img{
     width: 100%;
@@ -212,7 +231,6 @@
 .place-buy-btn{
     color: #fff;
     background-color: black;
-    text-decoration: none;
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
@@ -237,107 +255,161 @@
     color: aliceblue;
     cursor: pointer;
 }
-
-
-#footer{
-    width: 100%;
-    height: 1200px;
-}
-#footer .footer-contact{
-    margin-top: 80px;
-    background-color: rgb(255, 255, 255);
-    position: relative;
-    margin: 10px auto 10px auto;
-    text-align: center;
-
-}
-#footer .footer-contact h2{
-    letter-spacing: 3px;
-    font-size: 35px;
-    margin-bottom: 20px; 
-    
-}
-#footer .footer-contact p{
-    opacity: 0.5;
-    font-style: italic;
-}
-#footer .footer-contact div{
-    width: 50%;
-    height: 300px;
-   margin: 10px auto 10px auto;
-   text-align: center;
-}
-#footer .footer-normal{
-    height: 300px;
-    display: flex;
+/* model buy tickets*/
+.modal{
+    position:fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    align-items: center;
     justify-content: center;
-    align-items:flex-start;
-
 }
-#footer .footer-contact .footer-address,.footer-customer{
-    background-color: rgb(255, 255, 255) ;
-    width: 600px;
-    margin-top: 50px;
-    padding: 10px;
-    height: 200px;
+.modal.active{
+    display: flex;
 }
-#footer .footer-contact .footer-address i{
-    color: rgb(0, 0, 0);
-}
-#footer .footer-contact .footer-address h3{
-    padding: 6px;
-}
-
-#footer .footer-contact .footer-address{
-    left: 0px;
-    text-align: left;
-    margin-top: 20px;
-}
-#footer .footer-contact .footer-customer{
-    right: 0px;
-    padding: 20px;
-    
-}
-#footer .footer-contact .footer-customer input{
-    
-    margin: 0px 10px 4px 4px;
-    padding: 7px;
-}
-#footer .footer-contact .footer-customer  button{
-    right: 0px;
+.modal .modal-container{
+    background-color: #fff;
+    width: 900px;
+    min-height: 200px;
     position: relative;
-    background-color: #000;
-    color: rgb(255, 255, 255);
-    padding: 6px;
+    max-width: calc(100%-32px);
+    animation:modalFaceIn ease .5s;
 }
-#footer .footer-contact .footer-customer  button:hover{
-    background-color: rgb(193, 25, 25);
+.modal .modal-header{
+    background-color: darkturquoise;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
 }
-#footer .footer-contact .footer-customer .one,.two{
-    float: left;
-    width: 180px;
+.modal .modal-heading-icon{
+    margin-right: 16px;
 }
-#footer  .footer-contact .footer-customer .three{
-    width: 374px;
+.modal-close{
+    position:absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    opacity: 0.9;
+}.modal-close:hover{
+    opacity: 1;
 }
-#footer .footer-info{
-   background-color: rgb(255, 255, 255);
-   padding-bottom: 40px;
+.modal-body{
+    padding: 16px;
+    
+
 }
-#footer .footer-map{
-    background: url(../img/map.jpg) bottom center / cover no-repeat;
-    /* height:1080px; */
-    padding-top: 50%;
+.modal-label{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+.modal-input{
+    border: 1px solid #000;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+#buy-tickets{
+    background-color: darkturquoise;
+    border: none;
+    color: #fff;
+    width: 100%;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 18px;
+}
+#buy-tickets:hover{
+    opacity: 0.9;
+}
+.modal-footer{
+    padding: 16px;
+    text-align: right;
+}
+.modal-footer a{
+    color: aqua;
+}
+/* contact form */
+.contact-content{
+    margin-top: 48px;
+}
+.contact-content .contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact-info i{
+    width: 30px;
+    display: inline-block;
+}
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
     width: 100%;
 }
-#footer .footer-info{
-    text-align: center;
-    margin: 50px;
+.contact-form .form-submit-btn{
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    padding: 10px 16px;
+    float: right;
+    cursor: pointer; 
+    border: none;
 }
+.contact-form .form-submit-btn:hover{
+    background-color: #757575;
+   
+}
+/* map */
+.map-section img{
+    width: 100%;
+}
+/* footer */
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+#footer .socials-list{
+    font-size: 24px;
 
+}
+#footer .socials-list a{
+    text-decoration: none;
+    color: rgba(0,0,0,0.6);
+}
+#footer .socials-list a:hover{
+    color: rgba(0,0,0,0.3);
+}
+#footer .copyright{
+    margin-top: 15px;
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a{
+    color: rgba(0,0,0,0.6);
+}
+#footer .copyright a:hover{
+    color: rgba(0,0,0,0.3);
+}
 /* ipad */
 @media only screen and (max-width:1024px){
     #footer .footer-contact div{
         width:80%;
+    }
+}
+
+@keyframes modalFaceIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }to{
+        opacity: 1;
+        transform: translateY(0px);
     }
 }
