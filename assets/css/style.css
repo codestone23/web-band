@@ -256,6 +256,7 @@
     padding: 11px 16px;
     display: inline-block;
     margin-top: 15px;
+    border: none;
 }
 .place-buy-btn:hover{
     background-color: #ccc;
@@ -472,6 +473,8 @@
     }
     #header .mobile-menu-btn{
         display: block;
+        width: 46px;
+        height: 46px;
     }
     #content .member-img{
         width: 70%;
