@@ -30,5 +30,18 @@ mobileMenu.onclick = () =>{
         header.style.height = null
     }
 }
+var menuItems = document.querySelectorAll("#nav li a[href*='#']")
+for(var i of menuItems){
+    i.onclick = function(e){
+        let isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+        console.log(isParentMenu)
+        if(!isParentMenu){
+            header.style.height = null
+        }else{
+            e.preventDefault();
+        }
+       
+    }
+}
 
 

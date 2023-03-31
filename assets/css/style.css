@@ -52,7 +52,6 @@
     right: 0px;
     left: 0px;
     z-index: 1;
-    overflow: hidden;
 }
 #nav,.subnav{
     list-style-type: none;
@@ -72,7 +71,7 @@
 #nav li a{
     text-decoration: dashed;
     padding: 0px 24px;
-    display: inline-block;
+    display: block;
    
 }
 #nav .subnav li:hover,#nav > li:hover > a{
@@ -88,6 +87,15 @@
 }
 #nav li:hover .subnav{
     display: block;
+}
+#nav .subnav a{
+    color: #000;
+}
+#header .mobile-menu-btn{
+    position:absolute;
+    right: 0;
+    top: 0;
+    display: none;
 }
 #header .search-btn,.mobile-menu-btn{
     display: inline-block;
@@ -116,7 +124,8 @@
     display: inline-block;
 }
 #slider {
-    margin: 46px 0px;
+    margin: auto;
+    margin-top: 46px;
     background: url(../img/chicago.jpg) top center / cover no-repeat;
     padding-top: 50%;
     position: relative;
@@ -420,6 +429,12 @@
     }
 }
 @media (max-width:739px){
+    .s-mt-8{
+        margin-top: 8px;
+    }
+    .s-col-full{
+        width: 100%;
+    }
     #slider .text-heading{
         font-size: 15px;
     }
@@ -429,15 +444,44 @@
     #content .member-img{
         width: 336px;
     }
+    #nav {
+        display: block;
+    }
     #nav > li{
         display: block;
+    }
+    #nav li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position:initial;
+        background-color: #333;
+    }
+    #nav .subnav  a{
+        color: #fff;
+        padding: 5px 41px;
+    }
+    #nav .subnav li:first-child{
+        display: block;
+    }
+    #header{
+        overflow: hidden;
     }
     #header .search-btn{
         display: none;
     }
-    /* #header .mobile-menu-btn{
+    #header .mobile-menu-btn{
         display: block;
-    } */
+    }
+    #content .member-img{
+        width: 70%;
+    }
+    #slider .text-content {
+        bottom: 20px;
+    }
+    #slider .text-description {
+        margin-top: 10px;
+    }
 }
 
 @keyframes modalFaceIn{
